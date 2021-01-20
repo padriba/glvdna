@@ -3,7 +3,7 @@ glvdna is a tool for representation of variable-length DNA sequences using the G
 
 # Installation
 1- Clone the ```glvdna``` repository: ```git clone https://github.com/padriba/glvdna.git``` \
-2-  2- The required python version is ```3``` \
+2- The required python version is ```3``` 
 
 # Training embedding model
 
