@@ -8,7 +8,7 @@ import os
 
 
 def save_file(res):
-  with open('output.tsv', 'w') as out_file:
+  with open('output.tsv', 'a') as out_file:
     tsv_writer = csv.writer(out_file, delimiter='\t')
     tsv_writer.writerow(res)
 
@@ -17,6 +17,11 @@ def save_file(res):
 #for k = 8
 
 def buid_corpus(k_min,k_max,fasta_path):
+
+  #delete the file exits
+  file_exists = os.path.isfile('output.tsv') 
+  if(file_exists):
+       os.remove(file_out_put)
 
   files = list()
   for (dirpath, dirnames, filenames) in os.walk(fasta_path):
