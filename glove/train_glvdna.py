@@ -23,14 +23,26 @@ def main():
     argp.add_argument('--inputs', help='FASTA files', default=None)
     argp.add_argument('--k-low', help='k-mer start range (inclusive)', type=int, default=7)
     argp.add_argument('--k-high', help='k-mer end range (inclusive)', type=int, default=8)
+    argp.add_argument('-v', help='Get the embedding of this DNA sequence')
     args = argp.parse_args()
 
 
-    if(not args.inputs):
+    
+
+    if(args.v and not args.inputs):
+
+       with open(args.save_file+".txt", 'r') as f:
+          vectors = {}
+          for line in f:
+            vals = line.rstrip().split(' ')
+            vectors[vals[0]] = [float(x) for x in vals[1:]]
+       print("the vector representation of {} is ".format(args.v),vectors[args.v])
+
+    elif(not args.inputs):
        print("--inputs parameter is mandatory.")
     else:
             #buid corpus
-            print("Build corpus .....")
+            print("Building corpus .....")
             buid_corpus(args.k_low,args.k_high,args.inputs)
             print("End .....")
             
