@@ -21,7 +21,7 @@ def buid_corpus(k_min,k_max,fasta_path):
   #delete the file exits
   file_exists = os.path.isfile('output.tsv') 
   if(file_exists):
-       os.remove(file_out_put)
+       os.remove('output.tsv')
 
   files = list()
   for (dirpath, dirnames, filenames) in os.walk(fasta_path):
