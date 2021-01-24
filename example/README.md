@@ -9,3 +9,10 @@ This is an example of using **glvdna** to represent the low complexity data from
     
     python3 train_glvdna.py --inputs example/input/
  ```
+# Embedding representation of CAMI dataset
+```sh
+    cd glvdna/glove/ 
+    mv  output_vectors.txt example/
+    cd example/
+    python3 vectorise.py
+ ```
