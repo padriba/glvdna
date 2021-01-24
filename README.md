@@ -1,5 +1,5 @@
 # Introduction
-glvdna is a tool for representation of variable-length DNA sequences using the Global Vectors for Word Representation. It is adapted from the [GloVe](https://github.com/stanfordnlp/GloVe) library.
+**glvdna** is a tool for representation of variable-length DNA sequences using the Global Vectors for Word Representation. It is adapted from the [GloVe](https://github.com/stanfordnlp/GloVe) library.
 
 # Installation
 1- Clone the ```glvdna``` repository: ```git clone https://github.com/padriba/glvdna.git``` \
