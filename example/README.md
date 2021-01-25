@@ -19,3 +19,13 @@ This is an example of using **glvdna** to represent the low complexity data from
     cd example/
     python3 vectorise.py
  ```
+this will creat a file named```output_vectorisation.tsv```. This file contains the embedding representation the low complexity dataset.
+
+# k-means custering and plotting
+```sh
+python3 replace_seq_ids_by_taxa_ids.py
+python3 output_by_rank.py species
+python3 clustering_k_means.py
+
+```
+
