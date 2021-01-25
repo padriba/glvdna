@@ -28,4 +28,4 @@ python3 output_by_rank.py species
 python3 clustering_k_means.py
 
 ```
-
+![alt text](https://github.com/padriba/glvdna/blob/main/example/GloVe_.png)
