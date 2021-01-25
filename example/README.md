@@ -4,6 +4,9 @@ This is an example of using **glvdna** to represent the low complexity data from
 
 # Training the model
 
+- Downlaod the fasta file from this [link](https://dl.dropbox.com/s/h1p92jngrp15mop/low.fasta?dl=1)
+- Create an ```input``` folder in your home directory, and copy ```low.fasta``` in the ```input``` folder
+
 ```sh
     cd glvdna/glove/ 
     
