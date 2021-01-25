@@ -4,7 +4,7 @@ This is an example of using **glvdna** to represent the low complexity data from
 
 # Training the model
 
-- Downlaod the fasta file from this [link](https://dl.dropbox.com/s/h1p92jngrp15mop/low.fasta?dl=1)
+- Download the fasta file from this [link](https://dl.dropbox.com/s/h1p92jngrp15mop/low.fasta?dl=1)
 - Create an ```input``` folder in your home directory, and copy ```low.fasta``` in the ```input``` folder
 
 ```sh
@@ -19,9 +19,9 @@ This is an example of using **glvdna** to represent the low complexity data from
     cd example/
     python3 vectorise.py
  ```
-this will creat a file named```output_vectorisation.tsv```. This file contains the embedding representation the low complexity dataset.
+This will create a file named```output_vectorisation.tsv```. This file contains the embedding representation of the low complexity dataset.
 
-# k-means custering and plotting
+#  k-means clustering and plot
 ```sh
 python3 replace_seq_ids_by_taxa_ids.py
 python3 output_by_rank.py species
