@@ -10,7 +10,7 @@ This is an example of using **glvdna** to represent the low complexity data from
 ```sh
     cd glvdna/glove/ 
     
-    python3 train_glvdna.py --inputs example/input/
+    python3 train_glvdna.py --inputs ~/input/
  ```
 # Embedding representation of CAMI dataset
 ```sh
